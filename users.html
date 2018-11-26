@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>P4h</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" href="css/uniform.css" />
+<link rel="stylesheet" href="css/select2.css" />
+<link rel="stylesheet" href="css/matrix-style.css" />
+<link rel="stylesheet" href="css/matrix-media.css" />
+<link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<!--Header-part-->
+<div id="header">
+  <h1><a href="dashboard.html">P4h</a></h1>
+</div>
+<!--close-Header-part--> 
+
+
+<!--top-Header-menu-->
+<div id="user-nav" class="navbar navbar-inverse">
+  <ul class="nav">
+    <li  class="dropdown" id="profile-messages" ><a title="" href="#" data-toggle="dropdown" data-target="#profile-messages" class="dropdown-toggle"><i class="icon icon-user"></i>  <span class="text">Welcome User</span><b class="caret"></b></a>
+      <ul class="dropdown-menu">
+        <li><a href="#"><i class="icon-user"></i> My Profile</a></li>
+        <li class="divider"></li>
+         <li><a href="lock_screen.html"><i class="icon-check"></i> Screen Lock</a></li>
+        <li class="divider"></li>
+        <li><a href="login.html"><i class="icon-key"></i> Log Out</a></li>
+      </ul>
+    </li>
+    <li class="dropdown" id="menu-messages"><a href="#" data-toggle="dropdown" data-target="#menu-messages" class="dropdown-toggle"><i class="icon icon-envelope"></i> <span class="text">Messages</span> <span class="label label-important">5</span> <b class="caret"></b></a>
+      <ul class="dropdown-menu">
+        <li><a class="sAdd" title="" href="#"><i class="icon-plus"></i> new message</a></li>
+        <li class="divider"></li>
+        <li><a class="sInbox" title="" href="#"><i class="icon-envelope"></i> inbox</a></li>
+        <li class="divider"></li>
+        <li><a class="sOutbox" title="" href="#"><i class="icon-arrow-up"></i> outbox</a></li>
+        <li class="divider"></li>
+        <li><a class="sTrash" title="" href="#"><i class="icon-trash"></i> trash</a></li>
+      </ul>
+    </li>
+    <!--<li class=""><a title="" href="#"><i class="icon icon-cog"></i> <span class="text">Settings</span></a></li>-->
+    <li class=""><a title="" href="login.html"><i class="icon icon-share-alt"></i> <span class="text">Logout</span></a></li>
+  </ul>
+</div>
+
+<div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a>
+  <ul>
+    <li class="active"><a href="index.html"><i class="icon icon-home"></i> <span>Dashboard</span></a> </li>
+	  <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>Courses</span> <span class="label label-important">4</span></a>
+      <ul>
+        <li><a href="courses.html">Courses</a></li>
+		
+        <li><a href="#newCourse" data-toggle="modal" >New Course</a></li>
+        <li><a href="coursesAssignment.html">Courses Assignment</a></li>
+		<li><a href="#newAssigment" data-toggle="modal" >New Assignment</a></li>
+      </ul>
+    </li>
+	  <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>Classroom</span> <span class="label label-important">1</span></a>
+      <ul>
+        <li><a href="lessons.html">Lesson</a></li>
+		   <!--<li><a href="Assessments.html">Assessments</a></li>-->
+        <!--<li><a href="form-validation.html">Form with Validation</a></li>
+        <li><a href="form-wizard.html">Form with Wizard</a></li>-->
+      </ul>
+    </li>
+	 <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>Users</span> <span class="label label-important">2</span></a>
+      <ul>
+        <li><a href="users.html">Users</a></li>
+        <li><a href="#newUser" data-toggle="modal" >New User</a></li>
+        <!--<li><a href="form-wizard.html">Form with Wizard</a></li>-->
+      </ul>
+    </li>
+  </ul>
+</div>
+<!--sidebar-menu-->
+
+<!--main-container-part-->
+<div id="content">
+<!--breadcrumbs-->
+  <div id="content-header">
+    <div id="breadcrumb"> <a href="index.html" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a></div>
+  </div>
+<!--End-breadcrumbs-->
+
+<!--Action boxes-->
+  <div class="container-fluid">
+
+ 
+    <hr/>
+    <div class="row-fluid">
+      
+      <div class="span12">    
+        <div class="widget-box">
+          <div class="widget-title">
+            <ul class="nav nav-tabs">
+              <li class="active"><a data-toggle="tab" href="#tab1">Staffs</a></li>
+              <li><a data-toggle="tab" href="#tab2">Students</a></li>
+              <li><a data-toggle="tab" href="#tab3">Complaints</a></li>
+            </ul>
+          </div>
+          <div class="widget-content tab-content">
+            <div id="tab1" class="tab-pane active">
+			  <div class="widget-box">
+          <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
+            <h5>Stuffs</h5>
+          </div>
+          <div class="widget-content nopadding">
+            <table class="table table-bordered data-table">
+              <thead>
+                <tr>
+                  <th>Tutor Name</th>
+                  <th>Contact</th>
+                  <th>Gender(s)</th>
+                  <th>Qualification</th>
+				  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                <tr class="gradeC">
+                  <td>Immanuel Yaw</td>
+                  <td>0249273086</td>
+                  <td>Male</td>
+				  <td>HND Civil Enginering</td>
+               <td class="center">
+			   <button class="btn btn-primary">Edit Info</button>
+              <button class="btn btn-info">Disable</button>
+              <button class="btn btn-success">Activate</button></td>
+                </tr>
+       
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+            </div>
+            <div id="tab2" class="tab-pane">
+			  <div class="widget-box">
+          <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
+            <h5>Students</h5>
+          </div>
+          <div class="widget-content nopadding">
+            <table class="table table-bordered data-table">
+              <thead>
+                 <tr>
+                  <th>User Name</th>
+                  <th>Contact</th>
+                  <th>Gender(s)</th>
+                  <th>Age</th>
+				  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                <tr class="gradeC">
+                  <td>Trident</td>
+                  <td>Internet Explorer 5.0</td>
+                  <td>Win 95+</td>
+				  <td>Win 95+</td>
+                       <td class="center">
+					   <button class="btn btn-primary">Edit Info</button>
+              <button class="btn btn-info">Disable</button>
+              <button class="btn btn-success">Activate</button></td>
+			  </td>
+                </tr>
+       
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+            </div>
+            <div id="tab3" class="tab-pane">
+                <div class="widget-box">
+          <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
+            <h5>Complaints</h5>
+          </div>
+          <div class="widget-content nopadding">
+            <table class="table table-bordered data-table">
+              <thead>
+                 <tr>
+                  <th>Complain No.</th>
+                  <th>From (User)</th>
+                  <th>Date Of Complain</th>
+                  
+				  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="gradeX">
+                  <td>Trident</td>
+                  <td>InternetExplorer 4.0</td>
+                  <td>Win 95+</td>
+                  <td class="center">
+				  <button class="btn btn-primary">Read</button>
+              <button class="btn btn-info">Disable user</button>
+              <button class="btn btn-success">Activate</button></td>
+                </tr>
+                
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+			  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--end-main-container-part-->
+
+<!--Footer-part-->
+
+<div class="row-fluid">
+  <div id="footer" class="span12"> 2018 &copy; P4h. Brought to you by <a href="http://wondabytegh.com">WondabyteGhana</a> </div>
+</div>
+
+
+<script type="text/javascript">
+  // This function is called from the pop-up menus to transfer to
+  // a different page. Ignore if the value returned is a null string:
+  function goPage (newURL) {
+
+      // if url is empty, skip the menu dividers and reset the menu selection to default
+      if (newURL != "") {
+      
+          // if url is "-", it is this page -- reset the menu:
+          if (newURL == "-" ) {
+              resetMenu();            
+          } 
+          // else, send page to designated URL            
+          else {  
+            document.location.href = newURL;
+          }
+      }
+  }
+
+// resets the menu selection upon entry to this page:
+function resetMenu() {
+   document.gomenu.selector.selectedIndex = 2;
+}
+</script>
+<!--end-Footer-part-->
+<script src="js/jquery.min.js"></script> 
+<script src="js/jquery.ui.custom.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.uniform.js"></script> 
+<script src="js/select2.min.js"></script> 
+<script src="js/jquery.dataTables.min.js"></script> 
+<script src="js/matrix.js"></script> 
+<script src="js/matrix.tables.js"></script>
+
+
+
+</body>
+</html>
